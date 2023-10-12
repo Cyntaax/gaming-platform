@@ -1,13 +1,16 @@
 {
-  "name": "@gaming-platform/source",
+  "name": "game-platform",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
-    "@nx/js": "16.10.0",
-    "@nx/workspace": "16.10.0",
-    "nx": "16.10.0"
-  }
+    "@nx-tools/container-metadata": "^4.0.3",
+    "@nx-tools/nx-container": "^4.0.3",
+    "nx": "15.7.2",
+    "prettier": "^2.6.2"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
 }

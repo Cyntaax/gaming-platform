@@ -1,0 +1,52 @@
+{
+  "name": "altv-server",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/altv-server",
+  "targets": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "options": {
+        "engine": "docker",
+        "push": true,
+        "metadata": {
+          "images": ["registry.cyntaax.dev/altv-server"],
+          "load": true,
+          "tags": [
+            "type=ref,event=tag",
+            "latest"
+          ]
+        }
+      }
+    },
+    "kube": {
+      "executor": "./tools/executors/kubernetes:deploy",
+      "options": {
+        "kind": "deployment",
+        "name": "altv-server",
+        "container": "altv-server",
+        "image": "registry.shareplay.tv/altv-server"
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "baseBranch": "main",
+        "preset": "conventional",
+        "push": true,
+        "skipCommit": true,
+        "skipProjectChangelog": true,
+        "commitMessageFormat": "wip(${projectName}): release version ${version}",
+        "postTargets": ["altv-server:github"]
+      }
+    },
+    "github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}"
+      }
+    }
+  },
+  "tags": []
+}

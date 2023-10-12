@@ -1,0 +1,44 @@
+15:10 [Info] Loading Oxide Core v2.0.4073...
+15:10 [Info] Loading extensions...
+15:10 [Info] Loaded extension CSharp v2.0.4117 by Oxide Team and Contributors
+15:10 [Info] Loaded extension MySql v2.0.3774 by Oxide Team and Contributors
+15:10 [Info] Loaded extension SQLite v2.0.3804 by Oxide Team and Contributors
+15:10 [Info] Unity version: 2021.3.29f1
+15:10 [Info] Loaded extension Unity v2.0.3777 by Oxide Team and Contributors
+15:10 [Info] Loaded extension Rust v2.0.6039 by Oxide Team and Contributors
+15:10 [Info] [CSharp] Downloading Oxide.Compiler. . .
+15:10 [Info] [CSharp] Downloaded newer version of Oxide.Compiler | Newer found
+15:10 [Info] File permissions set for Oxide.Compiler
+15:10 [Info] Using Covalence provider for game 'Rust'
+15:10 [Info] Loading plugins...
+15:10 [Info] Loaded plugin Unity v2.0.3777 by Oxide Team and Contributors
+15:10 [Info] Loaded plugin Rust v2.0.6039 by Oxide Team and Contributors
+15:10 [Info] [CSharp] Started Oxide.Compiler v successfully
+15:10 [Info] Shutting down compiler because no more jobs
+15:10 [Info] TestPlugin was compiled successfully in 0ms
+15:10 [Info] [Test Plugin] WOOOO Test plugin loaded
+15:10 [Info] Loaded plugin Test Plugin v0.1.0 by Frenzy Roleplay
+15:10 [Info] Compiler shutdown completed
+15:14 [Info] IP address from external API: 104.187.221.61
+18:56 [Info] Unloaded plugin Test Plugin v0.1.0 by Frenzy Roleplay
+19:15 [Info] Loading Oxide Core v2.0.4073...
+19:15 [Info] Loading extensions...
+19:15 [Info] Loaded extension CSharp v2.0.4117 by Oxide Team and Contributors
+19:15 [Info] Loaded extension MySql v2.0.3774 by Oxide Team and Contributors
+19:15 [Info] Loaded extension SQLite v2.0.3804 by Oxide Team and Contributors
+19:15 [Info] Unity version: 2021.3.29f1
+19:15 [Info] Loaded extension Unity v2.0.3777 by Oxide Team and Contributors
+19:15 [Info] Loaded extension Rust v2.0.6038 by Oxide Team and Contributors
+19:15 [Info] [CSharp] Checking for updates for Oxide.Compiler | Local MD5: 3a0143f758249e0795072ff168a1197f | Last modified: 2023-10-06 15:10:11
+19:15 [Info] [CSharp] Oxide.Compiler is up to date
+19:15 [Info] File permissions set for Oxide.Compiler
+19:15 [Info] Using Covalence provider for game 'Rust'
+19:15 [Info] Loading plugins...
+19:15 [Info] Loaded plugin Unity v2.0.3777 by Oxide Team and Contributors
+19:15 [Info] Loaded plugin Rust v2.0.6038 by Oxide Team and Contributors
+19:15 [Info] [CSharp] Started Oxide.Compiler v successfully
+19:16 [Info] Shutting down compiler because no more jobs
+19:16 [Info] TestPlugin was compiled successfully in 310ms
+19:16 [Info] Compiler shutdown completed
+19:16 [Info] [Test Plugin] Test Plugin loaded and running
+19:16 [Info] Loaded plugin Test Plugin v0.1.0 by Cyntaax Gaming
