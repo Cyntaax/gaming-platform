@@ -1,0 +1,24 @@
+version: '3.4'
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: core.harbor.cyntaax.com/library/oxide-server
+    volumes:
+    - ./config:/steamcmd/rust/server/docker/cfg
+    - ./src:/steamcmd/rust/oxide
+    - ./plugin_config:/steamcmd/rust/oxide/config
+    - ./server_files:/steamcmd/rust/server/docker
+    ports:
+    - "8080:8080"
+    - "28016:28016"
+    - "28016:28016/udp"
+    - "28015:28015"
+    - "28015:28015/udp"
+    - "28082:28082"
+    - "28082:28082/udp"
+    environment:
+      RUST_OXIDE_ENABLED: 1
+      RUST_START_MODE: 0
+      RUST_OXIDE_UPDATE_ON_BOOT: 0
